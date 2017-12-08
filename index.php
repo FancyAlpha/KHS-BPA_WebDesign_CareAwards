@@ -29,6 +29,18 @@
 	<h1>$title</h1> //each var needs the php tag around it, but I ommited it for simplicity
 	<p>$body</p> //all of these variables were declared in another file, but since I imported this to the other file, they are shared
 	<p>$extra_text</p> //this is a whole new way of content management. Unfortunately, markdown plus is not enough to design a whole site. The best method is probably this.
+-->
+
+<!--
+We could also read a md file to get the content of the page, using JavaScript or PHP
+
+So
+-Header
+-Content -- read from MD reader
+-Footer
+
+Is the page organization
+-->
 
 	<?php include('modules/footer.php'); ?>
 </body>
