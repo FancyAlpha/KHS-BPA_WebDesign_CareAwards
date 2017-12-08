@@ -1,0 +1,13 @@
+# evil windows stuff
+Thumbs.db
+Desktop.ini
+
+# evil mac stuff
+.DS_Store
+
+# nobody needs php composer downloads
+/vendor/*
+
+# keep some hiddens
+!.htaccess
+!/.gitignore
