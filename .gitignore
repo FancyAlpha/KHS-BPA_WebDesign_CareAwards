@@ -9,5 +9,4 @@ Desktop.ini
 /vendor/*
 
 # keep some hiddens
-!.htaccess
 !/.gitignore
