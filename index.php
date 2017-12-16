@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
 <?php $rel_url = "";
-	  $title = 'cool title'; include('_modules/head.php'); ?>
+	  $title = "cool title";
+	  $desc = "";
+
+	  include('_modules/head.php');
+?>
 
 <body>
 	<?php require('_modules/nav.php'); ?>
