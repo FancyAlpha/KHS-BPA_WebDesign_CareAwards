@@ -1,30 +1,43 @@
 <!-- Footer Setcion -->
-<?php
-$footerColumn1 = "
-L1<br>
-L2<br>
-L3<br>";
-
-$footerColumn2 = "
-L4<br>
-L5<br>
-L6<br>";
-
-$footerColumn3 = "
-L7<br>
-L8<br>
-L9<br>";
-?>
-
-
 <footer>
-	<div class="footer-item">
-	<?=$footerColumn1?>
+	<div class="container">
+		<div class="navigation">
+			<div class="footer-item">
+				<h3><?=$award1DropdownLabel?></h3>
+				<?php 
+		foreach($award1DropdownContents as $link)
+			echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+		?>
+			</div>
+
+			<div class="footer-item">
+				<h3><?=$award2DropdownLabel?></h3>
+				<?php 
+		foreach($award2DropdownContents as $link)
+			echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+		?>
+			</div>
+
+			<div class="footer-item">
+				<h3><?=$award3DropdownLabel?></h3>
+				<?php 
+		foreach($award3DropdownContents as $link)
+			echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+		?>
+			</div>
+		</div>
+
+		<div class="about">
+			<h3>Made by: </h3>
+<pre>Authors: John P Rangel
+	      Carter Watson
+	      Bryson Smith
+	      Pranav Rayudu</pre>
+
+			<p>Charter: </p>
+			<p>School?</p>
+			<p>Something else</p>
+		</div>
 	</div>
-	<div class="footer-item">
-	<?=$footerColumn2?>
-	</div>
-	<div class="footer-item">
-	<?=$footerColumn3?>
-	</div>
+	<div class="copyright"><p class="container">&copy; Made by the KHS BPA Web Design Team 2017-18</p></div>
 </footer>

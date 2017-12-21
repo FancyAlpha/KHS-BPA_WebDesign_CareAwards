@@ -29,11 +29,11 @@
 			
 			.column {
 				background: rgb(20, 20, 20);
-				margin: 5px;
 				flex: 1;
 				
 				min-width: 250px;
-				padding: 15px;
+				margin: 5px;
+				padding: 20px;
 				
 				&:last-child {
 					border: none;

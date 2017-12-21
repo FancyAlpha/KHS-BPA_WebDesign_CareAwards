@@ -29,21 +29,34 @@
     display: block !important; }
 
 /*Footer CSS*/
-body {
-  margin: 0px; }
-
 footer {
   background-color: #333;
-  font-family: Arial;
-  display: flex;
-  justify-content: space-around; }
-
-.footer-item {
-  width: 600px;
-  display: flex;
-  justify-content: center;
-  color: #AAA;
-  font-size: 12px; }
+  color: white; }
+  footer .container {
+    display: flex;
+    flex-wrap: wrap; }
+    footer .container .navigation {
+      flex: 3;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      min-width: 450px; }
+      footer .container .navigation .footer-item {
+        flex: 1;
+        color: #AAA; }
+        footer .container .navigation .footer-item h3,
+        footer .container .navigation .footer-item a {
+          display: block; }
+        footer .container .navigation .footer-item a {
+          color: white; }
+    footer .container .about {
+      flex: 1;
+      min-width: 130px; }
+      footer .container .about pre {
+        font-family: Helvetica, sans-serif; }
+  footer .copyright {
+    padding: 15px;
+    background: #141414; }
 
 .home .bk {
   width: 100%;
@@ -67,10 +80,10 @@ footer {
   flex-wrap: wrap; }
   .home main .row .column {
     background: #141414;
-    margin: 5px;
     flex: 1;
     min-width: 250px;
-    padding: 15px; }
+    margin: 5px;
+    padding: 20px; }
     .home main .row .column:last-child {
       border: none; }
     .home main .row .column a {

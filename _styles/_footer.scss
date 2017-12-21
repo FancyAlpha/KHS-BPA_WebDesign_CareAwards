@@ -1,20 +1,46 @@
 /*Footer CSS*/
 
-body {
-    margin: 0px;
-}
-
 footer {
-    background-color: #333;
-    font-family: Arial;
-    display: flex;
-    justify-content: space-around;
-}
+	background-color: #333;
+	color: white;
 
-.footer-item {
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    color: #AAA;
-    font-size: 12px;
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+
+		.navigation {
+			flex: 3;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			min-width: 450px;
+
+			.footer-item {
+				flex: 1;
+				color: #AAA;
+				h3,
+				a {
+					display: block;
+				}
+
+				a {
+					color: white;
+				}
+			}
+		}
+
+		.about {
+			flex: 1;
+			min-width: 130px;
+
+			pre {
+				font-family: Helvetica, sans-serif;
+			}
+		}
+	}
+
+	.copyright {
+		padding: 15px;
+		background: rgb(20, 20, 20);
+	}
 }

@@ -6,20 +6,21 @@ $award1DropdownLabel = "Professional Awards";
 $award2DropdownLabel = "Service Learning Awards";
 $award3DropdownLabel = "Special Recognition Awards";
 
-$award1DropdownContents = "
-<a href=\"#\">Link 1</a>
-<a href=\"#\">Link 2</a>
-<a href=\"#\">Link 3</a>";
+//2d array magic
+$award1DropdownContents  = array(array("Link 1", "#"),
+								array("Link 2", "#"),
+								array("Link 3", "#"),
+								array("Link 4", "#"),
+								array("Link 5", "#"));
 
-$award2DropdownContents = "
-<a href=\"#\">Link 1</a>
-<a href=\"#\">Link 2</a>
-<a href=\"#\">Link 3</a>";
+$award2DropdownContents  = array(array("Link 1", "#"),
+							   array("Link 2", "#"),
+							   array("Link 3", "#"));
 
-$award3DropdownContents = "
-<a href=\"#\">Link 1</a>
-<a href=\"#\">Link 2</a>
-<a href=\"#\">Link 3</a>";
+$award3DropdownContents = array(array("Link 1", "#"),
+							   array("Link 2", "#"),
+							   array("Link 3", "#"),
+							   array("Link 4", "#"));
 
 ?>
 
@@ -30,7 +31,10 @@ $award3DropdownContents = "
 				<?=$award1DropdownLabel?>
 			</div>
 			<div class="dropdown-content" id="award1Dropdown">
-				<?=$award1DropdownContents?>
+				<?php 
+				foreach($award1DropdownContents as $link)
+					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+				?>
 			</div>
 		</div>
 
@@ -41,7 +45,10 @@ $award3DropdownContents = "
 				<?=$award2DropdownLabel?>
 			</div>
 			<div class="dropdown-content" id="award2Dropdown">
-				<?=$award2DropdownContents?>
+				<?php 
+				foreach($award2DropdownContents as $link)
+					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+				?>
 			</div>
 		</div>
 
@@ -50,7 +57,10 @@ $award3DropdownContents = "
 				<?=$award3DropdownLabel?>
 			</div>
 			<div class="dropdown-content" id="award3Dropdown">
-				<?=$award3DropdownContents?>
+				<?php 
+				foreach($award3DropdownContents as $link)
+					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+				?>
 			</div>
 		</div>
 	</div>
