@@ -1,9 +1,4 @@
-<nav>
-	<a href="<?=$rel_url?>index.php">home!</a>
-	<a href="<?=$rel_url?>Professional-Awards/testing.php">to testing 1!</a>
-	<a href="<?=$rel_url?>Service-Learning-Awards/testing2.php">to testing 2!</a>
-	<a href="<?=$rel_url?>Special-Recognition-Awards/testing3.php">to testing 3!</a>
-</nav>
+<!-- NOTICE: always use <//?=$rel_url?> withought the // when linking!
 
 <!-- nav Setcion -->
 <?php
@@ -28,7 +23,7 @@ $award3DropdownContents = "
 
 ?>
 
-<div class="navbar">
+<nav class="navbar">
   <div class="dropdown">
     <button class="award1ddbtn" onclick="dropdownFunction('award1Dropdown')"><?=$award1DropdownLabel?></button>
     <div class="dropdown-content" id="award1Dropdown">
@@ -40,7 +35,7 @@ $award3DropdownContents = "
   
   <div class="dropdown">
     <button class="award2ddbtn" onclick="dropdownFunction('award2Dropdown')"><?=$award2DropdownLabel?></button>
-    <div class=\"dropdown-content\" id="award2Dropdown">
+    <div class="dropdown-content" id="award2Dropdown">
       <?=$award2DropdownContents?>
     </div>
   </div>
@@ -51,4 +46,4 @@ $award3DropdownContents = "
       <?=$award3DropdownContents?>
     </div>
   </div>
-</div>";
+</nav>";

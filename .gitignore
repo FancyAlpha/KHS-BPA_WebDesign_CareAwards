@@ -10,3 +10,6 @@ Desktop.ini
 
 # keep some hiddens
 !/.gitignore
+
+# unecessary files no one needs
+/_styles/.sass-cache/

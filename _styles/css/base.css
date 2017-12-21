@@ -88,4 +88,7 @@ footer {
 .flex-other {
   display: flex; }
 
+body, html {
+  font-family: Helvetica, Arial, sans-serif; }
+
 /*# sourceMappingURL=base.css.map */

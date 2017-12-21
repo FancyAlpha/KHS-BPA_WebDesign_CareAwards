@@ -12,7 +12,7 @@
 	<meta property="og:description" content="<?=$desc?>">
 
 	<!-- link tags -->
-	<link type="text/css" src="<?=$rel_url?>_styles/css/base.css" >
+	<link rel="stylesheet" href="<?=$rel_url?>_styles/css/base.css" >
 	
 	<!-- script tags -->
 	<script src="<?=$rel_url?>_js/navfooter.js"></script>
