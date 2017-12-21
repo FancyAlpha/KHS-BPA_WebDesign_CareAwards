@@ -1,5 +1,5 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="/KHS-BPA_WebDesign_CareAwards/_styles/css/navfooter.css">
+    <link rel="stylesheet" type="text/css" href="/_styles/css/navfooter.css">
 </head>
 
 <body>
