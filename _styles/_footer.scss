@@ -1,0 +1,20 @@
+/*Footer CSS*/
+
+body {
+    margin: 0px;
+}
+
+footer {
+    background-color: #333;
+    font-family: Arial;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-item {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    color: #AAA;
+    font-size: 12px;
+}
