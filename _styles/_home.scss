@@ -1,0 +1,51 @@
+.home {
+	.bk {
+		width: 100%;
+		height: 70vh;
+		background: url('../../_assets/people-walking.jpeg') no-repeat center;
+		background-size: cover;
+		position: absolute;
+		z-index: -1;
+	}
+	
+	header {
+		margin: 10vh 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		.heading {
+			color: white;
+			padding: 15px;
+			background: rgba(0,0,0, 0.6);
+		}
+	}
+	
+	main {
+		.row {
+			color: white;
+			display: flex;
+			flex-wrap: wrap;
+			
+			.column {
+				background: rgb(20, 20, 20);
+				margin: 5px;
+				flex: 1;
+				
+				min-width: 250px;
+				padding: 15px;
+				
+				&:last-child {
+					border: none;
+				}
+				
+				a {
+					display: block;
+					color: rgba(255,255,255, 0.8);
+					text-decoration: none;
+					line-height: 2em;
+				}
+			}
+		}
+	}
+}

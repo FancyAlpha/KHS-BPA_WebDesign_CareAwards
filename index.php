@@ -7,56 +7,59 @@
 	  include('_modules/head.php');
 ?>
 
-<body>
+<body class="home">
 	<?php require('_modules/nav.php'); ?>
+	<div class="bk"></div>
 	<header>
-		<h1>The BPA Cares Program</h1>
-		<p>A BPA chapter aligned with the goals and mission of Business Professional of America is concerned with service. Business Professionals of America recommends chapters become involved in one or more of the BPA Cares programs it offers. Participation in this program means that members are engaging in worthwhile projects while having the opportunity to receive recognition from the national organization.</p>
+		<div class="container heading">
+			<h1>The BPA Cares Program</h1>
+			<p>A BPA chapter aligned with the goals and mission of Business Professional of America is concerned with service. Business Professionals of America recommends chapters become involved in one or more of the BPA Cares programs it offers. Participation in this program means that members are engaging in worthwhile projects while having the opportunity to receive recognition from the national organization.</p>
+		</div>
 	</header>
 
-	<main>
-		<div>
-			<div>
+	<main class="container">
+		<div class="row">
+			<div class="column">
 				<h2>Service Learning Awards</h2>
 				<p>Encouraging individuals and chapters to be involved in their community through service learning.</p>
-				
-				<a>Community Service Award</a>
-				<a>Environmental Action/Awareness Award</a>
-				<a>Safety Awareness Award</a>
-				<a>Service Learning Individual Award</a>
-				<a>Special Olympics Award</a>
+
+				<a href="">Community Service Award</a>
+				<a href="">Environmental Action/Awareness Award</a>
+				<a href="">Safety Awareness Award</a>
+				<a href="">Service Learning Individual Award</a>
+				<a href="">Special Olympics Award</a>
 			</div>
-			
-			<div>
+
+			<div class="column">
 				<h2>Special Recognition Awards</h2>
 				<p>Encouraging individuals and chapters to support and promote their organizations.</p>
-				
-				<a>BPA Marketing and Public Relations</a>
-				<a>BPA Merit Scholar</a>
-				<a>Chapter Activities Award of Excellence</a>
-				<a>Recruiter of the Year Award</a>
-				<a>Membership Explosion Award </a>
-				<a>Social Media Award</a>
-				<a>The Professional Cup</a>
+
+				<a href="">BPA Marketing and Public Relations</a>
+				<a href="">BPA Merit Scholar</a>
+				<a href="">Chapter Activities Award of Excellence</a>
+				<a href="">Recruiter of the Year Award</a>
+				<a href="">Membership Explosion Award </a>
+				<a href="">Social Media Award</a>
+				<a href="">The Professional Cup</a>
 			</div>
-			
-			<div>
+
+			<div class="column">
 				<h2>Professional Awards</h2>
 				<p>Acknowledging the dedication and service of our supporters.</p>
-				
-				<a>Advisor of the Year Award</a>
-				<a>Emerging Advisor of the Year Award</a>
-				<a>Emerging Professional of the Year Award</a>
-				<a>Hall of Fame Award</a>
-				<a>Outstanding Service Award</a>
-				<a>Student of the Year</a>
+
+				<a href="">Advisor of the Year Award</a>
+				<a href="">Emerging Advisor of the Year Award</a>
+				<a href="">Emerging Professional of the Year Award</a>
+				<a href="">Hall of Fame Award</a>
+				<a href="">Outstanding Service Award</a>
+				<a href="">Student of the Year</a>
 			</div>
 		</div>
-		
+
 		<div>Other stuff</div>
 	</main>
 
 	<?php require('_modules/footer.php'); ?>
 </body>
-</html>
 
+</html>

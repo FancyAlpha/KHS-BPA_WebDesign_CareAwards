@@ -24,26 +24,34 @@ $award3DropdownContents = "
 ?>
 
 <nav class="navbar">
-  <div class="dropdown">
-    <button class="award1ddbtn" onclick="dropdownFunction('award1Dropdown')"><?=$award1DropdownLabel?></button>
-    <div class="dropdown-content" id="award1Dropdown">
-      <?=$award1DropdownContents?>
-    </div>
-  </div>
-  
-  
-  
-  <div class="dropdown">
-    <button class="award2ddbtn" onclick="dropdownFunction('award2Dropdown')"><?=$award2DropdownLabel?></button>
-    <div class="dropdown-content" id="award2Dropdown">
-      <?=$award2DropdownContents?>
-    </div>
-  </div>
-  
-  <div class="dropdown">
-    <button class="award3ddbtn" onclick="dropdownFunction('award3Dropdown')"><?=$award3DropdownLabel?></button>
-    <div class="dropdown-content" id="award3Dropdown">
-      <?=$award3DropdownContents?>
-    </div>
-  </div>
-</nav>";
+	<div class="container">
+		<div class="dropdown">
+			<div class="aBtn award1ddbtn" onclick="dropdownFunction('award1Dropdown')">
+				<?=$award1DropdownLabel?>
+			</div>
+			<div class="dropdown-content" id="award1Dropdown">
+				<?=$award1DropdownContents?>
+			</div>
+		</div>
+
+
+
+		<div class="dropdown">
+			<div class="aBtn award2ddbtn" onclick="dropdownFunction('award2Dropdown')">
+				<?=$award2DropdownLabel?>
+			</div>
+			<div class="dropdown-content" id="award2Dropdown">
+				<?=$award2DropdownContents?>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<div class="aBtn award3ddbtn" onclick="dropdownFunction('award3Dropdown')">
+				<?=$award3DropdownLabel?>
+			</div>
+			<div class="dropdown-content" id="award3Dropdown">
+				<?=$award3DropdownContents?>
+			</div>
+		</div>
+	</div>
+</nav>
