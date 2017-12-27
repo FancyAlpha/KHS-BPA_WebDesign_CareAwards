@@ -20,6 +20,39 @@ a {
 	box-sizing: border-box;
 }
 
+$animate: all 0.2s ease-in-out;
+$col1: desaturate(#FF22CC, 40%);
+
+.hover-effect {
+  transition: $animate;
+  position: relative;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    width: 0px;
+    height: 5px;
+    margin: 5px 0 0;
+    transition: $animate;
+    transition-duration: 0.75s;
+    opacity: 0;
+  }
+  &:after {
+    left: 0;
+    background-color: $col1;
+  }
+
+  &:hover {
+    &:before,
+    &:after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+}
+
 /* For devices larger than 400px */
 
 @media (min-width: 400px) {

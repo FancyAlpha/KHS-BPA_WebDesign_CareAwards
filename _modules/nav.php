@@ -27,10 +27,10 @@ $award3DropdownContents = array(array("Link 1", "#"),
 <nav class="navbar">
 	<div class="container">
 		<div class="dropdown">
-			<div class="aBtn award1ddbtn" onclick="dropdownFunction('award1Dropdown')">
+			<div class="aBtn award1ddbtn">
 				<?=$award1DropdownLabel?>
 			</div>
-			<div class="dropdown-content" id="award1Dropdown">
+			<div class="dropdown-content">
 				<?php 
 				foreach($award1DropdownContents as $link)
 					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
@@ -41,10 +41,10 @@ $award3DropdownContents = array(array("Link 1", "#"),
 
 
 		<div class="dropdown">
-			<div class="aBtn award2ddbtn" onclick="dropdownFunction('award2Dropdown')">
+			<div class="aBtn award2ddbtn">
 				<?=$award2DropdownLabel?>
 			</div>
-			<div class="dropdown-content" id="award2Dropdown">
+			<div class="dropdown-content">
 				<?php 
 				foreach($award2DropdownContents as $link)
 					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
@@ -53,10 +53,10 @@ $award3DropdownContents = array(array("Link 1", "#"),
 		</div>
 
 		<div class="dropdown">
-			<div class="aBtn award3ddbtn" onclick="dropdownFunction('award3Dropdown')">
+			<div class="aBtn award3ddbtn">
 				<?=$award3DropdownLabel?>
 			</div>
-			<div class="dropdown-content" id="award3Dropdown">
+			<div class="dropdown-content">
 				<?php 
 				foreach($award3DropdownContents as $link)
 					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
