@@ -20,8 +20,24 @@ a {
 	box-sizing: border-box;
 }
 
-$animate: all 0.2s ease-in-out;
-$col1: desaturate(#FF22CC, 40%);
+/** A set of cool effects **/
+
+
+//hover settings
+$animate: all 0.3s ease-out;
+$underline-color: white;
+$underline-thickness: 5px;
+
+//card effects
+$card-bk: rgb(20, 20, 20);
+$card-padd: 2em;
+
+$shadow-size: 20px;
+$shadow-strength: 0.8;
+
+$border-col: white;
+$border-padd: 1em;
+$border-thickness: 2px;
 
 .hover-effect {
   transition: $animate;
@@ -31,17 +47,15 @@ $col1: desaturate(#FF22CC, 40%);
   &:after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     width: 0px;
-    height: 5px;
-    margin: 5px 0 0;
+    height: $underline-thickness;
     transition: $animate;
-    transition-duration: 0.75s;
     opacity: 0;
   }
   &:after {
     left: 0;
-    background-color: $col1;
+    background-color: $underline-color;
   }
 
   &:hover {
@@ -53,19 +67,38 @@ $col1: desaturate(#FF22CC, 40%);
   }
 }
 
-/* For devices larger than 400px */
+.card {
+	background: $card-bk;
+	margin: 0.5em;
+	padding: $card-padd;
+	@extend .inner-border;
+	@extend .shadow;
+}
 
-@media (min-width: 400px) {
-	.container {
-		width: 85%;
-		padding: 0;
+.shadow {
+	box-shadow: 0 0 $shadow-size rgba(0, 0, 0, $shadow-strength);
+}
+
+.inner-border {
+	display: inline-block;
+	position: relative;
+	&:before {
+		display: block;
+		content: '';
+		position: absolute;
+		top: $border-padd;
+		right: $border-padd;
+		bottom: $border-padd;
+		left: $border-padd;
+		border: $border-thickness solid $border-col;
 	}
 }
 
-/* For devices larger than 550px */
+/* For devices larger than 400px */
 
-@media (min-width: 550px) {
+@media (min-width: 500px) {
 	.container {
-		width: 80%;
+		width: 85%;
+		padding: 0;
 	}
 }

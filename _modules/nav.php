@@ -26,41 +26,44 @@ $award3DropdownContents = array(array("Link 1", "#"),
 
 <nav class="navbar">
 	<div class="container">
-		<div class="dropdown">
-			<div class="aBtn award1ddbtn">
-				<?=$award1DropdownLabel?>
+		<img src="<?=$rel_url?>_assets/headerLogo.png" alt="BPA Logo with tagline">
+		<div>
+			<div class="dropdown">
+				<div class="aBtn award1ddbtn">
+					<?=$award1DropdownLabel?>
+				</div>
+				<div class="dropdown-content">
+					<?php 
+					foreach($award1DropdownContents as $link)
+						echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+					?>
+				</div>
 			</div>
-			<div class="dropdown-content">
-				<?php 
-				foreach($award1DropdownContents as $link)
-					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
-				?>
-			</div>
-		</div>
 
 
 
-		<div class="dropdown">
-			<div class="aBtn award2ddbtn">
-				<?=$award2DropdownLabel?>
+			<div class="dropdown">
+				<div class="aBtn award2ddbtn">
+					<?=$award2DropdownLabel?>
+				</div>
+				<div class="dropdown-content">
+					<?php 
+					foreach($award2DropdownContents as $link)
+						echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+					?>
+				</div>
 			</div>
-			<div class="dropdown-content">
-				<?php 
-				foreach($award2DropdownContents as $link)
-					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
-				?>
-			</div>
-		</div>
 
-		<div class="dropdown">
-			<div class="aBtn award3ddbtn">
-				<?=$award3DropdownLabel?>
-			</div>
-			<div class="dropdown-content">
-				<?php 
-				foreach($award3DropdownContents as $link)
-					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
-				?>
+			<div class="dropdown">
+				<div class="aBtn award3ddbtn">
+					<?=$award3DropdownLabel?>
+				</div>
+				<div class="dropdown-content">
+					<?php 
+					foreach($award3DropdownContents as $link)
+						echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+					?>
+				</div>
 			</div>
 		</div>
 	</div>

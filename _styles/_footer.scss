@@ -1,6 +1,7 @@
 /*Footer CSS*/
 
 footer {
+	@extend .shadow;
 	background-color: #333;
 	color: white;
 

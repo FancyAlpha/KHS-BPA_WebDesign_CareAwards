@@ -2,32 +2,43 @@
 /*Header CSS*/
 .navbar .container {
   display: flex;
-  justify-content: flex-end;
-  overflow: hidden; }
-  .navbar .container .dropdown .aBtn {
-    cursor: pointer;
-    padding: 30px 16px;
-    background-color: inherit; }
-  .navbar .container .dropdown:hover {
-    background-color: rgba(0, 0, 0, 0.1); }
-    .navbar .container .dropdown:hover .dropdown-content {
-      max-height: 500px; }
-  .navbar .container .dropdown .dropdown-content {
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    min-width: 180px;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 2s ease; }
-    .navbar .container .dropdown .dropdown-content a {
-      float: none;
-      padding: 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left; }
-      .navbar .container .dropdown .dropdown-content a:hover {
-        background-color: #ddd; }
+  justify-content: space-around;
+  align-items: center; }
+  .navbar .container img {
+    min-width: 1in;
+    max-width: 1.5in;
+    width: 20%;
+    min-height: 0.71429in;
+    height: auto; }
+  .navbar .container div {
+    display: flex;
+    justify-content: flex-end;
+    align-self: stretch;
+    align-items: center; }
+    .navbar .container div .dropdown {
+      position: relative;
+      display: inline-block; }
+      .navbar .container div .dropdown .aBtn {
+        padding: 0 16px;
+        height: 100%;
+        cursor: pointer; }
+      .navbar .container div .dropdown:hover {
+        background-color: rgba(0, 0, 0, 0.1); }
+        .navbar .container div .dropdown:hover .dropdown-content {
+          display: block; }
+      .navbar .container div .dropdown .dropdown-content {
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        min-width: 180px;
+        display: none;
+        overflow: hidden; }
+        .navbar .container div .dropdown .dropdown-content a {
+          padding: 16px;
+          text-decoration: none;
+          display: block; }
+          .navbar .container div .dropdown .dropdown-content a:hover {
+            background-color: #ddd; }
 
 /*Footer CSS*/
 footer {
@@ -80,17 +91,15 @@ footer {
   display: flex;
   flex-wrap: wrap; }
   .home main .row .column {
-    background: #141414;
     flex: 1;
-    min-width: 250px;
-    margin: 5px;
-    padding: 20px; }
+    min-width: 250px; }
     .home main .row .column:last-child {
       border: none; }
     .home main .row .column a {
       color: rgba(255, 255, 255, 0.8);
       text-decoration: none;
-      line-height: 2em; }
+      padding: 0.5em 0;
+      display: inline-block; }
 
 .flex-container {
   display: flex;
@@ -113,34 +122,50 @@ a {
   margin: 0 auto;
   box-sizing: border-box; }
 
+/** A set of cool effects **/
 .hover-effect, .home main .row .column a {
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-out;
   position: relative; }
   .hover-effect:before, .home main .row .column a:before, .hover-effect:after, .home main .row .column a:after {
     content: "";
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     width: 0px;
     height: 5px;
-    margin: 5px 0 0;
-    transition: all 0.2s ease-in-out;
-    transition-duration: 0.75s;
+    transition: all 0.3s ease-out;
     opacity: 0; }
   .hover-effect:after, .home main .row .column a:after {
     left: 0;
-    background-color: #d34eb4; }
+    background-color: white; }
   .hover-effect:hover:before, .home main .row .column a:hover:before, .hover-effect:hover:after, .home main .row .column a:hover:after {
     width: 100%;
     opacity: 1; }
 
+.card, .home main .row .column {
+  background: #141414;
+  margin: 0.5em;
+  padding: 2em; }
+
+.shadow, .navbar, footer, .card, .home main .row .column {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8); }
+
+.inner-border, .card, .home main .row .column {
+  display: inline-block;
+  position: relative; }
+  .inner-border:before, .card:before, .home main .row .column:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    bottom: 1em;
+    left: 1em;
+    border: 2px solid white; }
+
 /* For devices larger than 400px */
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   .container {
     width: 85%;
     padding: 0; } }
-/* For devices larger than 550px */
-@media (min-width: 550px) {
-  .container {
-    width: 80%; } }
 
 /*# sourceMappingURL=base.css.map */
