@@ -32,16 +32,10 @@ $theme-color: white;
 			.column {
 				@extend .card;
 				flex: 1;
-
 				min-width: 250px;
 
-
-				&:last-child {
-					border: none;
-				}
-
 				a {
-					color: rgba(255, 255, 255, 0.8);
+					color: $light-color;
 					text-decoration: none;
 					padding: 0.5em 0;
 					display: inline-block;

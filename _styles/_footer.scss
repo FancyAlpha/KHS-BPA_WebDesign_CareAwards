@@ -1,47 +1,58 @@
 /*Footer CSS*/
 
 footer {
+	padding-top: 2em;
 	@extend .shadow;
 	background-color: #333;
-	color: white;
-
-	.container {
-		display: flex;
-		flex-wrap: wrap;
-
-		.navigation {
-			flex: 3;
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			min-width: 450px;
-
-			.footer-item {
-				flex: 1;
-				color: #AAA;
-				h3,
-				a {
-					display: block;
-				}
-
-				a {
-					color: white;
-				}
+	
+	&, a {
+		color: $light-color;
+	}
+	
+	a {
+		//color: desaturate(dodgerblue, 40%); //turns out to be not so bad
+		transition: color 0.2s;
+		&:hover {
+			color: white;
+		}
+	}
+	
+	h4 {
+		text-transform: uppercase;
+		color: white;
+		
+		&.policy-header {
+			margin-bottom: 0;
+			
+			&+p {
+				margin-top: 0;
 			}
 		}
+	}
+	
+	.container {
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 
-		.about {
-			flex: 1;
-			min-width: 130px;
-
-			pre {
-				font-family: Helvetica, sans-serif;
+			.footer-item {
+				margin: 1em;
+				
+				a {
+					display: block;
+					font-size: 0.9em;
+				}
+			}
+			
+			&.about {
+				
 			}
 		}
 	}
 
 	.copyright {
 		padding: 15px;
-		background: rgb(20, 20, 20);
+		background: $dark-color;
 	}
 }

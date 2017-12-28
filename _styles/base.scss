@@ -1,43 +1,50 @@
-@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css',
-'nav',
-'footer',
-'home',
-'sub-pages';
+/** A set variables **/
+
+//important colors
+$dark-color: rgb(20, 20, 20);
+$light-color: rgb(200, 200, 200);
+
+//breakpoint
+$breakpoint: 500px;
+
+//hover settings
+$animate: all 0.3s ease-out;
+$underline-thickness: 5px;
+
+//card effects
+$card-padd: 2em;
+
+$border-col: white;
+$border-padd: 1em;
+$border-thickness: 2px;
+
+//shadow effects
+$shadow-size: 10px;
+$shadow-strength: 0.7;
 
 body,
 html {
 	font-family: Helvetica, sans-serif;
-}
-
-a {
-	color: black;
+	line-height: 1.5em;
+	color: $dark-color;
 }
 
 .container {
 	width: 100%;
 	max-width: 1140px;
 	margin: 0 auto;
+	padding: 0 1em;
 	box-sizing: border-box;
 }
 
-/** A set of cool effects **/
+a {
+	color: $dark-color;
+	text-decoration: none;
+}
 
-
-//hover settings
-$animate: all 0.3s ease-out;
-$underline-color: white;
-$underline-thickness: 5px;
-
-//card effects
-$card-bk: rgb(20, 20, 20);
-$card-padd: 2em;
-
-$shadow-size: 20px;
-$shadow-strength: 0.8;
-
-$border-col: white;
-$border-padd: 1em;
-$border-thickness: 2px;
+.link {
+	border-bottom: 1px dotted $light-color;
+}
 
 .hover-effect {
   transition: $animate;
@@ -55,7 +62,7 @@ $border-thickness: 2px;
   }
   &:after {
     left: 0;
-    background-color: $underline-color;
+    background-color: $light-color;
   }
 
   &:hover {
@@ -68,7 +75,7 @@ $border-thickness: 2px;
 }
 
 .card {
-	background: $card-bk;
+	background: $dark-color;
 	margin: 0.5em;
 	padding: $card-padd;
 	@extend .inner-border;
@@ -77,6 +84,12 @@ $border-thickness: 2px;
 
 .shadow {
 	box-shadow: 0 0 $shadow-size rgba(0, 0, 0, $shadow-strength);
+}
+
+hr {
+	height: $border-thickness;
+	border: none;
+	background: $border-col;
 }
 
 .inner-border {
@@ -96,9 +109,15 @@ $border-thickness: 2px;
 
 /* For devices larger than 400px */
 
-@media (min-width: 500px) {
+@media (min-width: $breakpoint) {
 	.container {
 		width: 85%;
 		padding: 0;
 	}
 }
+
+@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css',
+'nav',
+'footer',
+'home',
+'sub-pages';
