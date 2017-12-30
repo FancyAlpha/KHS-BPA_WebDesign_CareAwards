@@ -47,7 +47,7 @@ $award3DropdownContents = array(array("Advisor of the Year Award", "#"),
 						?>
 					</div>
 				</div>
-				
+
 				<!-- Second dropdown -->
 				<div class="dropdown">
 					<div class="aBtn award2ddbtn">
@@ -61,7 +61,7 @@ $award3DropdownContents = array(array("Advisor of the Year Award", "#"),
 						?>
 					</div>
 				</div>
-				
+
 				<!-- Third dropdown -->
 				<div class="dropdown">
 					<div class="aBtn award3ddbtn">
