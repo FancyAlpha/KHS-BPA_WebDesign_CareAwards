@@ -1,23 +1,23 @@
-/*Header CSS*/
+/* Navigation CSS */
 
 nav {
 	@extend .shadow;
 	position: relative;
-	
+
 	.container {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		
+
 		img {
 			min-width: 1in;
-			max-width: 1.5in;		
+			max-width: 1.5in;
 			width: 20%;
-			
+
 			min-height: 1in * (250/350);
 			height: auto;
 		}
-		
+
 		div {
 			display: flex;
 			justify-content: flex-end;
@@ -26,8 +26,8 @@ nav {
 
 			.dropdown {
 				position: relative;
-    			display: inline-block;
-				
+				display: inline-block;
+
 				.aBtn {
 					padding: 0 16px;
 					height: 100%;
@@ -44,9 +44,7 @@ nav {
 
 				.dropdown-content {
 					position: absolute;
-					background-color: #f9f9f9;
-					//@extend .shadow;
-
+					background-color: #f9f9f9; //@extend .shadow;
 					min-width: 180px;
 					display: none;
 					z-index: 5;

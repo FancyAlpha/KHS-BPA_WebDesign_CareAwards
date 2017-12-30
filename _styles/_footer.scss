@@ -1,14 +1,15 @@
-/*Footer CSS*/
+/* Footer CSS */
 
 footer {
 	padding-top: 2em;
 	@extend .shadow;
 	background-color: #333;
-	
-	&, a {
+
+	&,
+	a {
 		color: $light-color;
 	}
-	
+
 	a {
 		//color: desaturate(dodgerblue, 40%); //turns out to be not so bad
 		transition: color 0.2s;
@@ -16,20 +17,20 @@ footer {
 			color: white;
 		}
 	}
-	
+
 	h4 {
 		text-transform: uppercase;
 		color: white;
-		
+
 		&.policy-header {
 			margin-bottom: 0;
-			
-			&+p {
+
+			& + p {
 				margin-top: 0;
 			}
 		}
 	}
-	
+
 	.container {
 		.row {
 			display: flex;
@@ -38,16 +39,14 @@ footer {
 
 			.footer-item {
 				margin: 1em;
-				
+
 				a {
 					display: block;
 					font-size: 0.9em;
 				}
 			}
-			
-			&.about {
-				
-			}
+
+			&.about {}
 		}
 	}
 
