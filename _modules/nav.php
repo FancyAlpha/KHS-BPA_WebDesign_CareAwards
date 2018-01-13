@@ -1,6 +1,6 @@
-<!-- NOTICE: always use <//?=$rel_url?> withought the // when linking!
+<!-- NOTICE: always use <//?=$rel_url?> withought the // when linking!-->
 
-<!-- nav Setcion -->
+<!-- nav Section -->
 <?php
 $award1DropdownLabel = "Professional Awards";
 $award2DropdownLabel = "Service Learning Awards";
@@ -28,53 +28,90 @@ $award3DropdownContents = array(array("Advisor of the Year Award", "#"),
 								array("Outstanding Service Award", "#"),
 								array("Student of the Year", "#"));
 
-?>
 
+
+foreach($award1DropdownContents as $link)
+{
+    $award1List = $award1List . "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+}
+
+foreach($award2DropdownContents as $link)
+{
+    $award2List = $award2List . "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+}
+
+foreach($award3DropdownContents as $link)
+{
+    $award3List = $award3List . "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+}
+
+if(preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"])) {
+$navbarContents = "
 	<nav>
-		<div class="container">
-			<img src="<?=$rel_url?>_assets/headerLogo.png" alt="BPA Logo with tagline">
+		<div class=\"container-mobile\">
 			<div>
-				<!-- First dropdown -->
-				<div class="dropdown">
-					<div class="aBtn award1ddbtn">
-						<?=$award1DropdownLabel?>
+				<div class=\"dropdown-mobile\">
+					<div class=\"aBtn award1ddbtn\">
+						<img src=\"$rel_url/_assets/dropdownIcon.png\" alt=\"Dropdown\">
 					</div>
-					<!-- links here -->
-					<div class="dropdown-content">
-						<?php 
-						foreach($award1DropdownContents as $link)
-							echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
-						?>
-					</div>
-				</div>
-
-				<!-- Second dropdown -->
-				<div class="dropdown">
-					<div class="aBtn award2ddbtn">
-						<?=$award2DropdownLabel?>
-					</div>
-					<!-- links here -->
-					<div class="dropdown-content">
-						<?php 
-						foreach($award2DropdownContents as $link)
-							echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
-						?>
-					</div>
-				</div>
-
-				<!-- Third dropdown -->
-				<div class="dropdown">
-					<div class="aBtn award3ddbtn">
-						<?=$award3DropdownLabel?>
-					</div>
-					<!-- links here -->
-					<div class="dropdown-content">
-						<?php 
-						foreach($award3DropdownContents as $link)
-							echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
-						?>
+					<div class=\"dropdown-content-mobile\">
+                        <div class=\"mobile-menu\">
+                        <div>
+                        <h3>$award1DropdownLabel</h3>
+                        $award1List
+                        </div>
+                        <div>
+                        <h3>$award2DropdownLabel</h3>
+                        $award2List
+                        </div>
+                        <div>
+                        <h3>$award3DropdownLabel</h3>
+                        $award3List
+                        </div>
+                        </div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</nav>
+	</nav>";
+}
+
+else {
+$navbarContents = "
+	<nav>
+		<div class=\"container\">
+			<img src=\"$rel_url/_assets/headerLogo.png\" alt=\"BPA Logo with tagline\">
+			<div>
+				<div class=\"dropdown\">
+					<div class=\"aBtn award1ddbtn\">
+						$award1DropdownLabel
+					</div>
+					<div class=\"dropdown-content\">
+						$award1List
+					</div>
+				</div>
+
+				<div class=\"dropdown\">
+					<div class=\"aBtn award2ddbtn\">
+						$award2DropdownLabel
+					</div>
+					<div class=\"dropdown-content\">
+						$award2List
+					</div>
+				</div>
+
+				<div class=\"dropdown\">
+					<div class=\"aBtn award3ddbtn\">
+						$award3DropdownLabel
+					</div>
+					<div class=\"dropdown-content\">
+						$award3List
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>";
+}
+
+	echo "$navbarContents";
+	?>
