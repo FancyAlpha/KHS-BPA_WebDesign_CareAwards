@@ -62,4 +62,65 @@ nav {
 			}
 		}
 	}
+	
+	.container-mobile {
+		display: flex;
+		justify-content: flex-start;
+
+		img {
+			max-width: 1.5in;
+			width: 20%;
+
+			height: auto;
+		}
+
+		div {
+			width: 100%;
+
+			.dropdown-mobile {
+				position: relative;
+				display: inline-block;
+
+				.aBtn {
+					padding: 0 16px;
+					height: 100%;
+					cursor: pointer;
+                    width: 40%;
+				}
+
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.1);
+
+					.dropdown-content-mobile {
+						display: block;
+					}
+				}
+
+				.dropdown-content-mobile {
+					position: absolute;
+					background-color: #f9f9f9; //@extend .shadow;
+					min-width: 180px;
+					display: none;
+					z-index: 5;
+
+					a {
+						padding: 16px;
+						text-decoration: none;
+						display: block;
+
+						&:hover {
+							background-color: #ddd;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	.mobile-menu {
+     display: flex;
+     justify-content: flex-start;
+     flex-wrap: wrap;
+     flex-direction: column;
+    }
 }
