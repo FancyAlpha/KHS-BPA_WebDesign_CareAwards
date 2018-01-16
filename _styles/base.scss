@@ -24,9 +24,18 @@ $shadow-strength: 0.7;
 
 body,
 html {
-	font-family: Helvetica, sans-serif;
+	font-family: "Times New Roman", Times, serif;
 	line-height: 1.5em;
 	color: $dark-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+	font-family: Helvetica, sans-serif;
 }
 
 .container {
@@ -47,31 +56,31 @@ a {
 }
 
 .hover-effect {
-  transition: $animate;
-  position: relative;
+	transition: $animate;
+	position: relative;
 
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 0px;
-    height: $underline-thickness;
-    transition: $animate;
-    opacity: 0;
-  }
-  &:after {
-    left: 0;
-    background-color: $light-color;
-  }
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		width: 0px;
+		height: $underline-thickness;
+		transition: $animate;
+		opacity: 0;
+	}
+	&:after {
+		left: 0;
+		background-color: $light-color;
+	}
 
-  &:hover {
-    &:before,
-    &:after {
-      width: 100%;
-      opacity: 1;
-    }
-  }
+	&:hover {
+		&:before,
+		&:after {
+			width: 100%;
+			opacity: 1;
+		}
+	}
 }
 
 .card {

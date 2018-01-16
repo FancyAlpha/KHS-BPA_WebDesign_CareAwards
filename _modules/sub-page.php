@@ -19,7 +19,7 @@
 			</main>
 		</div>
 
-		<?php require("../_modules/footer.php"); ?>
+		<?php require($rel_url . "_modules/footer.php"); ?>
 	</body>
 
 </html>

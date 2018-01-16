@@ -52,24 +52,24 @@ $navbarContents1 = "
 	<nav class=\"mobile\">
 		
 		<div class=\"container-mobile\">
-		<a href=\"$rel_url/index.php\"><img src=\"$rel_url/_assets/headerLogo.png\" alt=\"BPA Logo with tagline\" class=\"logo\"></a>
+		<a href=\"$rel_url"."index.php\"><img src=\"$rel_url"."_assets/headerLogo.png\" alt=\"BPA Logo with tagline\" class=\"logo\"></a>
 			<div>
 				<div class=\"dropdown-mobile\">
 					<div class=\"aBtn\">
-						<img src=\"$rel_url/_assets/dropdownIcon.png\" alt=\"Dropdown\">
+						<img src=\"$rel_url"."_assets/dropdownIcon.png\" alt=\"Dropdown\">
 					</div>
 					<div class=\"dropdown-content-mobile\">
                         <div class=\"mobile-menu\">
                         <div>
-                        <h3>$award1DropdownLabel</h3>
+                        <h3><a href=\"$rel_url"."Service-Learning-Awards/index.php\">$award1DropdownLabel</a></h3>
                         $award1List
                         </div>
                         <div>
-                        <h3>$award2DropdownLabel</h3>
+                        <h3><a href=\"$rel_url"."Special-Recognition-Awards/index.php\">$award2DropdownLabel</a></h3>
                         $award2List
                         </div>
                         <div>
-                        <h3>$award3DropdownLabel</h3>
+                        <h3><a href=\"$rel_url"."Professional-Awards/index.php\">$award3DropdownLabel</h3>
                         $award3List
                         </div>
                         </div>
@@ -82,11 +82,11 @@ $navbarContents1 = "
 $navbarContents2 = "
 	<nav class=\"desktop\">
 		<div class=\"container\">
-			<a href=\"$rel_url/index.php\"><img src=\"$rel_url/_assets/headerLogo.png\" alt=\"BPA Logo with tagline\" class=\"logo\"></a>
+			<a href=\"$rel_url"."index.php\"><img src=\"$rel_url"."_assets/headerLogo.png\" alt=\"BPA Logo with tagline\" class=\"logo\"></a>
 			<div>
 				<div class=\"dropdown\">
 					<div class=\"aBtn award1ddbtn\">
-						$award1DropdownLabel
+						<a href=\"$rel_url"."Service-Learning-Awards/index.php\">$award1DropdownLabel</a>
 					</div>
 					<div class=\"dropdown-content\">
 						$award1List
@@ -95,7 +95,7 @@ $navbarContents2 = "
 
 				<div class=\"dropdown\">
 					<div class=\"aBtn award2ddbtn\">
-						$award2DropdownLabel
+						<a href=\"$rel_url"."Special-Recognition-Awards/index.php\">$award2DropdownLabel</a>
 					</div>
 					<div class=\"dropdown-content\">
 						$award2List
@@ -104,7 +104,7 @@ $navbarContents2 = "
 
 				<div class=\"dropdown\">
 					<div class=\"aBtn award3ddbtn\">
-						$award3DropdownLabel
+						<a href=\"$rel_url"."Professional-Awards/index.php\">$award3DropdownLabel</a>
 					</div>
 					<div class=\"dropdown-content\">
 						$award3List

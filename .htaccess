@@ -1,4 +1,0 @@
-#take that nasty extention out - does not work
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]

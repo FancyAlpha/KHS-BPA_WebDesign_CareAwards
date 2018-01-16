@@ -8,12 +8,11 @@
 ?>
 
 <body class="home">
-	<?php require('_modules/nav.php'); ?>
+	<?php include('_modules/nav.php'); ?>
 	<div class="bk"></div>
 	<header>
 		<div class="container heading">
-			<h1>The Buisness Proffesionals of America Cares Awards</h1>
-			<h2>Today's students. Tommorow's business professionals.</h2>
+			<h1>The Buisness Proffesionals of America: Cares Awards</h1>
 			<p>Business Professionals of America was created with many goals and ambitions. Amongst its most importants is serving the community. The BPA Cares program allows members, both as charters and/or individuals to fulfill this goal and, at the same time, receive honors and recognition for doing such.</p>
 		</div>
 	</header>
@@ -22,7 +21,9 @@
 		<div class="row">
 			<div class="column">
 				<h2>
-					<?=$award1DropdownLabel?>
+					<a href="Service-Learning-Awards/index.php">
+						<?=$award1DropdownLabel?>
+					</a>
 				</h2>
 				<p>Engaging with society through community service.</p>
 				<?php
@@ -33,7 +34,9 @@
 
 			<div class="column">
 				<h2>
-					<?=$award1DropdownLabel?>
+					<a href="Special-Recognition-Awards/index.php">
+						<?=$award1DropdownLabel?>
+					</a>
 				</h2>
 				<p>Supporting and Promoting BPA.</p>
 
@@ -45,7 +48,9 @@
 
 			<div class="column">
 				<h2>
-					<?=$award1DropdownLabel?>
+					<a href="Professional-Awards/index.php">
+						<?=$award1DropdownLabel?>
+					</a>
 				</h2>
 				<p>Recognizing BPA’s supporters.</p>
 

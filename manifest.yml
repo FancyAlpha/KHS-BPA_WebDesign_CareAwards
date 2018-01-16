@@ -1,7 +1,6 @@
-#DO NOT push this until the very last minute
-#applications:
-#- buildpack: https://github.com/cloudfoundry/php-buildpack.git
-# host: KHS-BPA_WebDesign_CareAwards
-# name: KHS-BPA_CareAwards
-# memory: 64M
-# stack: cflinuxfs2
+applications:
+- buildpack: https://github.com/cloudfoundry/php-buildpack.git
+  host: bpa-careawards
+  name: khs-bpa-CareAwards
+  memory: 32M
+  stack: cflinuxfs2

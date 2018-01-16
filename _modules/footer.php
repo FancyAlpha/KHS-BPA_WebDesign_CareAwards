@@ -4,7 +4,9 @@
 		<div class="row navigation">
 			<div class="footer-item">
 				<h4>
-					<?=$award1DropdownLabel?>
+					<a href="Service-Learning-Awards/index.php">
+						<?=$award1DropdownLabel?>
+					</a>
 				</h4>
 				<?php 
 		foreach($award1DropdownContents as $link)
@@ -14,7 +16,9 @@
 
 			<div class="footer-item">
 				<h4>
-					<?=$award2DropdownLabel?>
+					<a href="Special-Recognition-Awards/index.php">
+						<?=$award2DropdownLabel?>
+					</a>
 				</h4>
 				<?php 
 		foreach($award2DropdownContents as $link)
@@ -24,7 +28,9 @@
 
 			<div class="footer-item">
 				<h4>
-					<?=$award3DropdownLabel?>
+					<a href="Professional-Awards/index.php">
+						<?=$award3DropdownLabel?>
+					</a>
 				</h4>
 				<?php 
 		foreach($award3DropdownContents as $link)
@@ -35,7 +41,9 @@
 
 		<div class="row about">
 			<div class="footer-item">
-
+				<p>
+					Taraka Pranav Rayudu<br> Carter Watson<br> John Rangel<br> Bryson Smith
+				</p>
 			</div>
 
 			<div class="footer-item">
@@ -56,6 +64,6 @@
 	</div>
 
 	<div class="copyright">
-		<p class="container">&copy; Made by the KHS BPA Web Design Team 2017-18</p>
+		<p class="container">Part of the content from this site is obtained from http://www.bpa.org/service/bpacares</p>
 	</div>
 </footer>
