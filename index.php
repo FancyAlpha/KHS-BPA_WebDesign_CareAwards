@@ -2,7 +2,7 @@
 <html>
 <?php $rel_url = "";
 	  $title = "BPA Care Awards";
-	  $desc = "Business Professionals of America was created with many goals and ambitions. Amongst its most importants is serving the community. The BPA Cares program allows members, both as charters and/or individuals to fulfill this goal and, at the same time, receive honors and recognition for doing such.";
+	  $desc = "Business Professionals of America was created with many goals and ambitions. Amongst its most importants is serving the community. The BPA Cares program allows members, both as charters and/or individuals, to fulfill this goal and, at the same time, receive honors and recognition for doing such.";
 
 	  include('_modules/head.php');
 ?>
@@ -12,8 +12,8 @@
 	<div class="bk"></div>
 	<header>
 		<div class="container heading">
-			<h1>The Buisness Proffesionals of America: Cares Awards</h1>
-			<p>Business Professionals of America was created with many goals and ambitions. Amongst its most importants is serving the community. The BPA Cares program allows members, both as charters and/or individuals to fulfill this goal and, at the same time, receive honors and recognition for doing such.</p>
+			<h1>The Business Professionals of America: Cares Awards</h1>
+			<p>Business Professionals of America was created with many goals and ambitions. Amongst its most important is serving the community. The BPA Cares program allows members, both as charters and/or individuals to fulfill this goal and, at the same time, receive honors and recognition for doing such.</p>
 		</div>
 	</header>
 

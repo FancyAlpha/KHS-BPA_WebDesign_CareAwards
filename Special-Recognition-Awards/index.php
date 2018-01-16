@@ -6,20 +6,16 @@ $desc = "Page describing main topics of the Special Recognition Awards";
 //content
 $heading = "Special Recognition Awards";
 $sub_heading = "Supporting and Promoting BPA";
-$para = "BPA is a rapidly growing organization and the Special Recognition
- Awards recognizes individuals and charters for supporting and promoting us.
- All members in good standing with BPA,
- in either Middle Level, Post-Secondary, or Secondary Division are allowed to apply.
- //Array with the different awards goes here, hyper link to each one of them
+$para = "BPA is a rapidly growing organization and the Special Recognition Awards recognizes individuals and charters for supporting and promoting us.
+ All members in good standing with BPA, in either Middle Level, Post-Secondary, or Secondary Division are allowed to apply.
  
- Submission
+<b>Submission</b>
 Professional Award applications must be submitted using http://www.bpa.org/submit .
 
 Applications due March 1.
 
-//If possible, please add some sort of 'spoiler' block here, so that one can open and close the following text.
 
-General Guidelines
+<b>General Guidelines</b>
 
 NO E-MAIL OR MAIL APPLICATIONS WILL BE ACCEPTED.
 All materials submitted become the property of Business Professionals of America and may be used as the National Center deems appropriate.
@@ -32,13 +28,7 @@ Hall of Fame: A maximum of two (2) individuals will be recognized with lifetime 
 
 Outstanding Service Award: A maximum of five (5) individuals will be recognized with a plaque on stage at the National Leadership Conference.
 
-Student of the Year Award-NEW: A maximum of one (1) individual from the Secondary and one (1) individual from the Post-Secondary Division will be recognized with a plaque on stage at the National Leadership Conference.
--------------------------------------------------------
-Having trouble with the BPA Cares Award? Visit our Frequently Asked Questions page.
-
-Non-Discrimination Policy
-It is the policy of Business Professionals of America that no person on the basis of race, color, religion, national origin or ancestry, age, sex, marital status, sexual orientation, or disability shall be discriminated against, excluded from participation in, denied the benefits of, or otherwise be subjected to, discrimination in any program or activity for which it is responsible.”
-";
+Student of the Year Award-NEW: A maximum of one (1) individual from the Secondary and one (1) individual from the Post-Secondary Division will be recognized with a plaque on stage at the National Leadership Conference.";
 
 $arr = array("BPA Marketing and Public Relations", 
 "BPA Merit Scholar",

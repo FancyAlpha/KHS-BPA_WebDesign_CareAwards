@@ -6,10 +6,10 @@ $desc = "Page describing main topics of the Special Olympics Award";
 //content
 $heading = "Special Olympics Award";
 $sub_heading = "Because everyone is capable";
-$para = "Purpose
+$para = "<b>Purpose</b>
 To recognize local members involved with Service Learning.
 
-Eligibility
+<b>Eligibility</b>
 All applicants must be in good standing with Business Professionals of America. This award is open to members in the Middle Level, Post-Secondary and Secondary Divisions who provide a minimum of 100 hours of service or a $500.00 donation to Special Olympics.
 
 Guidelines & Application
@@ -19,12 +19,11 @@ Activities may be used in other individual or chapter activities.
 Provide the total number of hours per activity and the total hours involved with Service Learning.
 Applications due April 1.
 
-Online Application
-
-Qualification Period
+<b>Online Application:</b>
+<b>Qualification Period</b>
 Activities completed between April 2, 2017 and April 1, 2018 (11:59 PM EST) can be counted towards this award.
 
-General Information
+<b>General Information</b>
 Applicants may only count activities once in the BPA Cares Award Program, except Service Learning Individual and Chapter Activities Award of Excellence.
 
 Chapters may complete more than one activity to equal the total number of hours/dollars.
@@ -43,7 +42,7 @@ It is not necessary for a chapter to attend the National Leadership Conference t
 
 DO NOT SEND ANY AWARD APPLICATION(S) AS PART OF ANOTHER APPLICATION. AWARDS MAY NOT BE SUBMITTED WITH TECHNICAL PROJECTS FOR COMPETITIVE EVENTS.  EACH AWARD MUST BE SUBMITTED SEPARATELY.
 
-Recognition          
+<b>Recogntion</b>          
 100-249 service hours OR $500.00-$999.00 contribution: Certificate of Achievement 
 250+ service hours or $1000.00+: Award of Achievement and recognition on-stage at the National Leadership Conference.";
 

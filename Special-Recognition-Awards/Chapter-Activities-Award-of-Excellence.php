@@ -6,20 +6,19 @@ $desc = "Page describing the Chapter Activities Award of Excellence";
 //content
 $heading = "Chapter Activities Award of Excellence";
 $sub_heading = "Outstanding work";
-$para = "Purpose
+$para = "<b>Purpose</b>
 To recognize local chapters for their outstanding activities and program of work and to motivate all local chapters to strive for an outstanding program of activities.
 
-Eligibility
+<b>Eligibility</b>
 All applicants must be in good standing with Business Professionals of America. This award is open to members in the Middle Level, Post-Secondary and Secondary Divisions.
 
-Guidelines and Application
+<b>Guidelines and Application</b>
 All applications must be submitted utilizing the online application. Submission applications must include all activity descriptions. Partial applications will not be accepted or combined. Do not begin the application online submission form until you have completed all activities.
 
 Applications due April 1.
 
-Online Application
-
-Qualification Period
+<b>Online Application:</b>
+<b>Qualification Period</b>
 Activities completed between April 2, 2017 and April 1, 2018 (11:59 PM EST) can be counted towards this award.
 
 Scoring Rubric
@@ -44,7 +43,7 @@ Chapter social activity
 Local chapter budget
 A career development related activity for the chapter (could include seeing a speaker, watching a film, taking a field trip, etc.)
 
-General Information
+<b>General Information</b>
 Applicants may only count activities once in the BPA Cares Award Program, except Service Learning Individual and Chapter Activities Award of Excellence.
 
 Chapters may complete more than one activity to equal the total number of hours/dollars.
@@ -61,7 +60,7 @@ It is not necessary for a chapter to attend the National Leadership Conference t
 
 DO NOT SEND ANY AWARD APPLICATION(S) AS PART OF ANOTHER APPLICATION. AWARDS MAY NOT BE SUBMITTED WITH TECHNICAL PROJECTS FOR COMPETITIVE EVENTS.  EACH AWARD MUST BE SUBMITTED SEPARATELY.
 
-Recognition          
+<b>Recogntion</b>          
 Chapter Activities Award of Excellence: A plaque will be presented to each qualifying chapter on stage at the National Leadership Conference.";
 
 

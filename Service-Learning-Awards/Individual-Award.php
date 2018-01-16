@@ -6,10 +6,10 @@ $desc = "Page describing main topics of the Service Learning Individual Award";
 //content
 $heading = "Service Learning Individual Award";
 $sub_heading = "Individual Service";
-$para = "Purpose
+$para = "<b>Purpose</b>
 To recognize local members involved with Service Learning.
 
-Eligibility
+<b>Eligibility</b>
 All applicants must be in good standing with Business Professionals of America. This award is open to members in the Middle Level, Post-Secondary and Secondary Divisions who provide a minimum of 500 hours of service learning to their community and have earned the President’s Volunteer Service Award within the same membership year.
 
 Guidelines & Application
@@ -19,12 +19,11 @@ Activities may be used in other individual or chapter activities.
 Provide the total number of hours per activity and the total hours involved with Service Learning.
 Applications due April 1.
 
-Online Application
-
-Qualification Period
+<b>Online Application:</b>
+<b>Qualification Period</b>
 Activities completed between April 2, 2017 and April 1, 2018 (11:59 PM EST) can be counted towards this award, with the exception of activities accrued though the President's Volunteer Service Award. PVSA activities may be accumulated through the span of multiple years.
 
-General Information
+<b>General Information</b>
 Applicants may only count activities once in the BPA Cares Award Program, except Service Learning Individual and Chapter Activities Award of Excellence.
 
 Chapters may complete more than one activity to equal the total number of hours/dollars.
@@ -43,7 +42,7 @@ It is not necessary for a chapter to attend the National Leadership Conference t
 
 DO NOT SEND ANY AWARD APPLICATION(S) AS PART OF ANOTHER APPLICATION. AWARDS MAY NOT BE SUBMITTED WITH TECHNICAL PROJECTS FOR COMPETITIVE EVENTS.  EACH AWARD MUST BE SUBMITTED SEPARATELY.
 
-Recognition          
+<b>Recogntion</b>          
 500 service hours: Certificate of Achievement 
 One Award of Achievement per Division will be given to the individual with the highest number of service hours and recognition on stage at the National Leadership Conference.";
 

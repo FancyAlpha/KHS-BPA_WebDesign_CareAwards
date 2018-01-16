@@ -7,7 +7,7 @@ $award2DropdownLabel = "Special Recognition Awards";
 $award3DropdownLabel = "Professional Awards";
 
 //2d array magic
-$award1DropdownContents  = array(array("Community Serivce Award", "Service-Learning-Awards/Community-Service-Award.php"),
+$award1DropdownContents  = array(array("Community Service Award", "Service-Learning-Awards/Community-Service-Award.php"),
 								array("Environmental Action/Awareness Award", "Service-Learning-Awards/Environmental-Action-Award.php"),
 								array("Safety Awareness Award", "Service-Learning-Awards/Safety-Awareness-Award.php"),
 								array("Service Learning Individual Award", "Service-Learning-Awards/Individual-Award.php"),
@@ -52,10 +52,9 @@ $navbarContents1 = "
 	<nav class=\"mobile\">
 		
 		<div class=\"container-mobile\">
-		<a href=\"$rel_url"."index.php\"><img src=\"$rel_url"."_assets/headerLogo.png\" alt=\"BPA Logo with tagline\" class=\"logo\"></a>
 			<div>
 				<div class=\"dropdown-mobile\">
-					<div class=\"aBtn\">
+					<div class=\"dropdown-icon\">
 						<img src=\"$rel_url"."_assets/dropdownIcon.png\" alt=\"Dropdown\">
 					</div>
 					<div class=\"dropdown-content-mobile\">
@@ -76,6 +75,9 @@ $navbarContents1 = "
 					</div>
 				</div>
 			</div>
+
+			<a href=\"$rel_url"."index.php\"><img src=\"$rel_url"."_assets/headerLogo.png\" class=\"logo\" alt=\"BPA Logo with tagline\" class=\"logo\"></a>
+
 		</div>
 	</nav>";
 

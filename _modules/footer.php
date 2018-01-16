@@ -58,12 +58,12 @@
 		<p>Having trouble with BPA Cares Award? Visit our <a href="http://www.bpa.org/service/caresfaq" class="link">Frequently Asked Questions page.</a></p>
 
 		<h4 class="policy-header">Non-Discrimination Policy</h4>
-		<p>It is the policy of Business Professionals of America that no person on the basis of race, color, religion, national origin or ancestry, age, sex, marital status, sexual orientation, or disability shall be discriminated against, excluded from participation in, denied the benefits of, or otherwise be subjected to, discrimination in any program or activity for which it is responsible
+		<p>It is the policy of Business Professionals of America that no person on the basis of race, color, religion, national origin or ancestry, age, sex, marital status, sexual orientation, or disability shall be discriminated against, excluded from participation in, denied the benefits of, or otherwise be subjected to, discrimination in any program or activity for which it is responsible.
 		</p>
 
 	</div>
 
 	<div class="copyright">
-		<p class="container">Part of the content from this site is obtained from http://www.bpa.org/service/bpacares</p>
+		<p class="container">Part of the content for this site has been obtained from <a href="http://www.bpa.org/service/bpacares" class="link">The BPA Cares website.</p>
 	</div>
 </footer>
