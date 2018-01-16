@@ -35,7 +35,7 @@
 			<div class="column">
 				<h2>
 					<a href="Special-Recognition-Awards/index.php">
-						<?=$award1DropdownLabel?>
+						<?=$award2DropdownLabel?>
 					</a>
 				</h2>
 				<p>Supporting and Promoting BPA.</p>
@@ -49,7 +49,7 @@
 			<div class="column">
 				<h2>
 					<a href="Professional-Awards/index.php">
-						<?=$award1DropdownLabel?>
+						<?=$award3DropdownLabel?>
 					</a>
 				</h2>
 				<p>Recognizing BPA’s supporters.</p>
