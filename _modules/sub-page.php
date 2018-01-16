@@ -4,16 +4,20 @@
 	$rel_url = "../";
 	require($rel_url . "_modules/head.php"); ?>
 
-	<body>
+	<body class="sub">
 		<?php require($rel_url . "_modules/nav.php"); ?>
 
-		<header>
-			<h1>?=$heading</h1>
-		</header>
+		<div class="sub-body container">
+			<header>
+				<h1>
+					<?=$heading?>
+				</h1>
+			</header>
 
-		<main class="container">
-			<?=$para?>
-		</main>
+			<main>
+				<?=nl2br($para)?>
+			</main>
+		</div>
 
 		<?php require("../_modules/footer.php"); ?>
 	</body>

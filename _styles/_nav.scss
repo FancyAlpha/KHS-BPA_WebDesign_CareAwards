@@ -3,20 +3,20 @@
 nav {
 	@extend .shadow;
 	position: relative;
+	img.logo {
+		min-width: 1.5in;
+		max-width: 1.5in;
+		width: 20%;
+
+		height: auto;
+	}
 
 	.container {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
 
-		img {
-			min-width: 1in;
-			max-width: 1.5in;
-			width: 20%;
 
-			min-height: 1in * (250/350);
-			height: auto;
-		}
 
 		div {
 			display: flex;
@@ -62,10 +62,10 @@ nav {
 			}
 		}
 	}
-	
+
 	.container-mobile {
 		display: flex;
-		justify-content: flex-start;
+		justify-content: space-around;
 
 		img {
 			max-width: 1.5in;
@@ -76,16 +76,17 @@ nav {
 
 		div {
 			width: 100%;
-
+			display: relative;
 			.dropdown-mobile {
 				position: relative;
-				display: inline-block;
 
 				.aBtn {
 					padding: 0 16px;
-					height: 100%;
 					cursor: pointer;
-                    width: 40%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
 				}
 
 				&:hover {
@@ -116,11 +117,25 @@ nav {
 			}
 		}
 	}
-	
+
 	.mobile-menu {
-     display: flex;
-     justify-content: flex-start;
-     flex-wrap: wrap;
-     flex-direction: column;
-    }
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+}
+
+.desktop {
+	display: none;
+}
+
+@media (min-width: $breakpoint) {
+	.mobile {
+		display: none;
+	}
+
+	.desktop {
+		display: block;
+	}
 }
