@@ -4,7 +4,7 @@
 		<div class="row navigation">
 			<div class="footer-item">
 				<h4>
-					<a href="Service-Learning-Awards/index.php">
+					<a href="<?=$rel_url?>Service-Learning-Awards/index.php">
 						<?=$award1DropdownLabel?>
 					</a>
 				</h4>
@@ -16,7 +16,7 @@
 
 			<div class="footer-item">
 				<h4>
-					<a href="Special-Recognition-Awards/index.php">
+					<a href="<?=$rel_url?>Special-Recognition-Awards/index.php">
 						<?=$award2DropdownLabel?>
 					</a>
 				</h4>
@@ -28,7 +28,7 @@
 
 			<div class="footer-item">
 				<h4>
-					<a href="Professional-Awards/index.php">
+					<a href="<?=$rel_url?>Professional-Awards/index.php">
 						<?=$award3DropdownLabel?>
 					</a>
 				</h4>
