@@ -1,7 +1,8 @@
 /** A set variables **/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 body,
 html {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5em;
   color: #141414;
   overflow-x: hidden; }
@@ -12,7 +13,8 @@ h3,
 h4,
 h5,
 h5 {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   line-height: 1.1em; }
 
 .container {
@@ -26,6 +28,9 @@ a {
   color: #141414;
   text-decoration: none; }
 
+.transition, nav .container div .dropdown, nav .container div .dropdown .dropdown-content a {
+  transition: all 0.2s; }
+
 .link {
   border-bottom: 1px dotted #c8c8c8; }
 
@@ -35,9 +40,9 @@ a {
   .hover-effect:before, .home main .row .column a:before, .hover-effect:after, .home main .row .column a:after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     width: 0px;
-    height: 5px;
+    height: 2px;
     transition: all 0.3s ease-out;
     opacity: 0; }
   .hover-effect:after, .home main .row .column a:after {
@@ -376,9 +381,9 @@ footer {
     text-transform: uppercase;
     color: white; }
     footer h4.policy-header {
-      margin-bottom: 0; }
+      margin-bottom: 0em; }
       footer h4.policy-header + p {
-        margin-top: 0; }
+        margin-top: 0.5em; }
   footer .container .row {
     display: flex;
     flex-wrap: wrap;

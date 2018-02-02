@@ -21,6 +21,7 @@ nav {
                 position: relative;
                 display: inline-block; //text-align: justify; //height: 100%;
                 //display: inline-flex;
+                @extend .transition;
                 &>.aBtn {
                     a {
                         display: block;
@@ -43,6 +44,7 @@ nav {
                         padding: 16px;
                         text-decoration: none;
                         display: block;
+                        @extend .transition;
                         &:hover {
                             background-color: #ddd;
                         }

@@ -7,7 +7,7 @@ $light-color: rgb(200, 200, 200);
 $breakpoint: 500px;
 //hover settings
 $animate: all 0.3s ease-out;
-$underline-thickness: 5px;
+$underline-thickness: 2px;
 //card effects
 $card-padd: 2em;
 $border-col: white;
@@ -16,9 +16,11 @@ $border-thickness: 2px;
 //shadow effects
 $shadow-size: 10px;
 $shadow-strength: 0.7;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 body,
 html {
-    font-family: "Times New Roman", Times, serif;
+    //font-family: "Times New Roman", Times, serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5em;
     color: $dark-color;
     overflow-x: hidden;
@@ -30,7 +32,9 @@ h3,
 h4,
 h5,
 h5 {
-    font-family: Helvetica, sans-serif;
+    //font-family: Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     line-height: 1.1em;
 }
 
@@ -47,6 +51,10 @@ a {
     text-decoration: none;
 }
 
+.transition {
+    transition: all 0.2s;
+}
+
 .link {
     border-bottom: 1px dotted $light-color;
 }
@@ -58,7 +66,7 @@ a {
     &:after {
         content: "";
         position: absolute;
-        bottom: 0;
+        bottom: 5px;
         width: 0px;
         height: $underline-thickness;
         transition: $animate;

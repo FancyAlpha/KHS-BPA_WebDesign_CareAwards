@@ -1,57 +1,47 @@
 /* Footer CSS */
 
 footer {
-	padding-top: 2em;
-	@extend .shadow;
-	background-color: #333;
-
-	&,
-	a {
-		color: $light-color;
-	}
-
-	a {
-		//color: desaturate(dodgerblue, 40%); //turns out to be not so bad
-		transition: color 0.2s;
-		&:hover {
-			color: white;
-		}
-	}
-
-	h4 {
-		text-transform: uppercase;
-		color: white;
-
-		&.policy-header {
-			margin-bottom: 0;
-
-			& + p {
-				margin-top: 0;
-			}
-		}
-	}
-
-	.container {
-		.row {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-
-			.footer-item {
-				margin: 1em;
-
-				a {
-					display: block;
-					font-size: 0.9em;
-				}
-			}
-
-			&.about {}
-		}
-	}
-
-	.copyright {
-		padding: 15px;
-		background: $dark-color;
-	}
+    padding-top: 2em;
+    @extend .shadow;
+    background-color: #333;
+    &,
+    a {
+        color: $light-color;
+    }
+    a {
+        //color: desaturate(dodgerblue, 40%); //turns out to be not so bad
+        transition: color 0.2s;
+        &:hover {
+            color: white;
+        }
+    }
+    h4 {
+        text-transform: uppercase;
+        color: white;
+        &.policy-header {
+            margin-bottom: 0em;
+            &+p {
+                margin-top: 0.5em;
+            }
+        }
+    }
+    .container {
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .footer-item {
+                margin: 1em;
+                a {
+                    display: block;
+                    font-size: 0.9em;
+                }
+            }
+            &.about {}
+        }
+    }
+    .copyright {
+        padding: 15px;
+        background: $dark-color;
+    }
 }
