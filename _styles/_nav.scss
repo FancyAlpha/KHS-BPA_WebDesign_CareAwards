@@ -1,5 +1,4 @@
 /* Navigation CSS */
-
 nav {
     @extend .shadow;
     position: relative;
@@ -7,7 +6,7 @@ nav {
         min-width: 1.5in;
         max-width: 1.5in;
         width: 20%;
-        height: auto;
+        max-height: 7em;
     }
     .container {
         display: flex;
@@ -24,8 +23,8 @@ nav {
                 @extend .transition;
                 &>.aBtn {
                     a {
-                        display: block;
-                        padding: 2em 0.5em;
+                        height: 6em;
+                        padding: 0.5em 0.5em;
                     }
                 }
                 &:hover {
@@ -62,8 +61,8 @@ nav {
                 position: relative; //display: flex;
                 align-items: center;
                 .dropdown-icon {
-                    width: 4em;
-                    height: 4em;
+                    width: 5em;
+                    height: 5em;
                     padding: 1em;
                     img {
                         width: 3em;
