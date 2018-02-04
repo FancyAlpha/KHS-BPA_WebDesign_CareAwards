@@ -34,17 +34,17 @@ $award3List = "";
 
 foreach($award1DropdownContents as $link)
 {
-    $award1List .= "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+    $award1List .= "<span><a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a></span>";
 }
 
 foreach($award2DropdownContents as $link)
 {
-    $award2List .= "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+    $award2List .= "<span><a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a></span>";
 }
 
 foreach($award3DropdownContents as $link)
 {
-    $award3List .= "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a>";
+    $award3List .= "<span><a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a></span>";
 }
 
 
