@@ -284,7 +284,7 @@ nav {
     min-width: 1.5in;
     max-width: 1.5in;
     width: 20%;
-    height: auto; }
+    max-height: 7em; }
   nav .container {
     display: flex;
     justify-content: space-around;
@@ -296,9 +296,12 @@ nav {
       nav .container div .dropdown {
         position: relative;
         display: inline-block; }
-        nav .container div .dropdown > .aBtn a {
-          display: block;
-          padding: 2em 0.5em; }
+        nav .container div .dropdown > .aBtn {
+          height: 6em;
+          padding: 0.5em 0.5em; }
+          nav .container div .dropdown > .aBtn a {
+            display: inline;
+            height: auto; }
         nav .container div .dropdown:hover {
           background-color: rgba(0, 0, 0, 0.1); }
           nav .container div .dropdown:hover .dropdown-content {
@@ -322,8 +325,8 @@ nav {
       position: relative;
       align-items: center; }
       nav .container-mobile div .dropdown-mobile .dropdown-icon {
-        width: 4em;
-        height: 4em;
+        width: 5em;
+        height: 5em;
         padding: 1em; }
         nav .container-mobile div .dropdown-mobile .dropdown-icon img {
           width: 3em;
@@ -439,6 +442,7 @@ footer {
 
 .sub-body {
   background: white;
-  padding: 5em 2em; }
+  padding: 5em 2em;
+  max-width: 960px; }
 
 /*# sourceMappingURL=base.css.map */

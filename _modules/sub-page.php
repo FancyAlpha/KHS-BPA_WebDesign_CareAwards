@@ -7,7 +7,7 @@
 	<body class="sub">
 		<?php require($rel_url . "_modules/nav.php"); ?>
 
-		<div class="sub-body container">
+		<main class="sub-body container">
 			<header>
 				<h1>
 					<?=$heading?>
@@ -17,7 +17,7 @@
 			<main>
 				<?=nl2br($para)?>
 			</main>
-		</div>
+		</main>
 
 		<?php require($rel_url . "_modules/footer.php"); ?>
 	</body>

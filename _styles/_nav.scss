@@ -1,123 +1,127 @@
 /* Navigation CSS */
+
 nav {
-    @extend .shadow;
-    position: relative;
-    img.logo {
-        min-width: 1.5in;
-        max-width: 1.5in;
-        width: 20%;
-        max-height: 7em;
-    }
-    .container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        div {
-            display: flex;
-            justify-content: flex-end;
-            align-self: stretch;
-            .dropdown {
-                position: relative;
-                display: inline-block; //text-align: justify; //height: 100%;
-                //display: inline-flex;
-                @extend .transition;
-                &>.aBtn {
-                    a {
-                        height: 6em;
-                        padding: 0.5em 0.5em;
-                    }
-                }
-                &:hover {
-                    background-color: rgba(0, 0, 0, 0.1);
-                    .dropdown-content {
-                        display: block;
-                    }
-                }
-                .dropdown-content {
-                    position: absolute;
-                    background-color: #f9f9f9; //@extend .shadow;
-                    min-width: 180px;
-                    display: none;
-                    z-index: 5;
-                    a {
-                        padding: 16px;
-                        text-decoration: none;
-                        display: block;
-                        @extend .transition;
-                        &:hover {
-                            background-color: #ddd;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .container-mobile {
-        display: flex;
-        justify-content: space-between;
-        div {
-            //display: flex;
-            .dropdown-mobile {
-                position: relative; //display: flex;
-                align-items: center;
-                .dropdown-icon {
-                    width: 5em;
-                    height: 5em;
-                    padding: 1em;
-                    img {
-                        width: 3em;
-                        padding: 0.5em;
-                    }
-                }
-                .aBtn {
-                    padding: 0 16px;
-                    cursor: pointer;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: 100%;
-                }
-                &:hover {
-                    background-color: rgba(0, 0, 0, 0.1);
-                    .dropdown-content-mobile {
-                        display: block;
-                    }
-                }
-                .dropdown-content-mobile {
-                    position: absolute;
-                    background-color: #f9f9f9; //@extend .shadow;
-                    min-width: 180px;
-                    display: none;
-                    z-index: 5;
-                    a {
-                        padding: 16px;
-                        text-decoration: none;
-                        display: block;
-                        &:hover {
-                            background-color: #ddd;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .mobile-menu {
-        display: flex;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
+	@extend .shadow;
+	position: relative;
+	img.logo {
+		min-width: 1.5in;
+		max-width: 1.5in;
+		width: 20%;
+		max-height: 7em;
+	}
+	.container {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		div {
+			display: flex;
+			justify-content: flex-end;
+			align-self: stretch;
+			.dropdown {
+				position: relative;
+				display: inline-block; //text-align: justify; //height: 100%;
+				//display: inline-flex;
+				@extend .transition;
+				& > .aBtn {
+					height: 6em;
+					padding: 0.5em 0.5em;
+					a {
+						display: inline;
+						height: auto;
+					}
+				}
+
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.1);
+					.dropdown-content {
+						display: block;
+					}
+				}
+				.dropdown-content {
+					position: absolute;
+					background-color: #f9f9f9; //@extend .shadow;
+					min-width: 180px;
+					display: none;
+					z-index: 5;
+					a {
+						padding: 16px;
+						text-decoration: none;
+						display: block;
+						@extend .transition;
+						&:hover {
+							background-color: #ddd;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container-mobile {
+		display: flex;
+		justify-content: space-between;
+		div {
+			//display: flex;
+			.dropdown-mobile {
+				position: relative; //display: flex;
+				align-items: center;
+				.dropdown-icon {
+					width: 5em;
+					height: 5em;
+					padding: 1em;
+					img {
+						width: 3em;
+						padding: 0.5em;
+					}
+				}
+				.aBtn {
+					padding: 0 16px;
+					cursor: pointer;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 100%;
+				}
+				&:hover {
+					background-color: rgba(0, 0, 0, 0.1);
+					.dropdown-content-mobile {
+						display: block;
+					}
+				}
+				.dropdown-content-mobile {
+					position: absolute;
+					background-color: #f9f9f9; //@extend .shadow;
+					min-width: 180px;
+					display: none;
+					z-index: 5;
+					a {
+						padding: 16px;
+						text-decoration: none;
+						display: block;
+						&:hover {
+							background-color: #ddd;
+						}
+					}
+				}
+			}
+		}
+	}
+	.mobile-menu {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
 }
 
 .desktop {
-    display: none;
+	display: none;
 }
 
 @media (min-width: $breakpoint) {
-    .mobile {
-        display: none;
-    }
-    .desktop {
-        display: block;
-    }
+	.mobile {
+		display: none;
+	}
+	.desktop {
+		display: block;
+	}
 }
