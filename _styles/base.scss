@@ -91,7 +91,7 @@ a {
 
 .card {
 	background: $dark-color;
-	margin: 0em;
+	margin-bottom: 0.5em;
 	padding: $card-padd;
 	@extend .inner-border;
 	@extend .shadow;
