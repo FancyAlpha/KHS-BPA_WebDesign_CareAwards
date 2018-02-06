@@ -1,5 +1,8 @@
 /** A set variables **/
 
+$primary-color: desaturate(rgb(0, 14, 68), 30%);
+$secondary-color: rgba(255, 0, 0, 0.45);
+
 //important colors
 $dark-color: rgb(20, 20, 20);
 $light-color: rgb(200, 200, 200);
@@ -19,11 +22,11 @@ $shadow-strength: 0.7;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 body,
 html {
-    //font-family: "Times New Roman", Times, serif;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 1.5em;
-    color: $dark-color;
-    overflow-x: hidden;
+	//font-family: "Times New Roman", Times, serif;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5em;
+	color: $dark-color;
+	overflow-x: hidden;
 }
 
 h1,
@@ -32,103 +35,104 @@ h3,
 h4,
 h5,
 h5 {
-    //font-family: Helvetica, sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    line-height: 1.1em;
+	//font-family: Helvetica, sans-serif;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	line-height: 1.1em;
 }
 
 .container {
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 1em;
-    box-sizing: border-box;
+	width: 100%;
+	max-width: 1140px;
+	margin: 0 auto;
+	padding: 0 1em;
+	box-sizing: border-box;
 }
 
 a {
-    color: $dark-color;
-    text-decoration: none;
+	color: $dark-color;
+	text-decoration: none;
 }
 
 .transition {
-    transition: all 0.2s;
+	transition: all 0.2s;
 }
 
 .link {
-    border-bottom: 1px dotted $light-color;
+	border-bottom: 1px dotted $light-color;
+	@extend .hover-effect;
 }
 
 .hover-effect {
-    transition: $animate;
-    position: relative;
-    &:before,
-    &:after {
-        content: "";
-        position: absolute;
-        bottom: 5px;
-        width: 0px;
-        height: $underline-thickness;
-        transition: $animate;
-        opacity: 0;
-    }
-    &:after {
-        left: 0;
-        background-color: $light-color;
-    }
-    &:hover {
-        &:before,
-        &:after {
-            width: 100%;
-            opacity: 1;
-        }
-    }
+	transition: $animate;
+	position: relative;
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		width: 0px;
+		height: $underline-thickness;
+		transition: $animate;
+		opacity: 0;
+	}
+	&:after {
+		left: 0;
+		background-color: white;
+	}
+	&:hover {
+		&:before,
+		&:after {
+			width: 100%;
+			opacity: 1;
+		}
+	}
 }
 
 .card {
-    background: $dark-color;
-    margin: 0em;
-    padding: $card-padd;
-    @extend .inner-border;
-    @extend .shadow;
+	background: $dark-color;
+	margin: 0em;
+	padding: $card-padd;
+	@extend .inner-border;
+	@extend .shadow;
 }
 
 .shadow {
-    box-shadow: 0 0 $shadow-size rgba(0, 0, 0, $shadow-strength);
+	box-shadow: 0 0 $shadow-size rgba(0, 0, 0, $shadow-strength);
 }
 
 hr {
-    height: $border-thickness;
-    border: none;
-    background: $border-col;
+	height: $border-thickness;
+	border: none;
+	background: $border-col;
 }
 
 .inner-border {
-    display: inline-block;
-    position: relative;
-    &:before {
-        display: block;
-        content: '';
-        position: absolute;
-        top: $border-padd;
-        right: $border-padd;
-        bottom: $border-padd;
-        left: $border-padd;
-        border: $border-thickness solid $border-col;
-    }
+	display: inline-block;
+	position: relative;
+	&:before {
+		display: block;
+		content: '';
+		position: absolute;
+		top: $border-padd;
+		right: $border-padd;
+		bottom: $border-padd;
+		left: $border-padd;
+		border: $border-thickness solid $border-col;
+	}
 }
 
 
 /* For devices larger than 400px */
 
 @media (min-width: $breakpoint) {
-    .container {
-        width: 85%;
-        padding: 0;
-    }
-    .card {
-        margin: 0.5em;
-    }
+	.container {
+		width: 85%;
+		padding: 0;
+	}
+	.card {
+		margin: 0.5em;
+	}
 }
 
 @import 'normalize',

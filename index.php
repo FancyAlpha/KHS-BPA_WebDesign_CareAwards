@@ -19,45 +19,31 @@
 
 	<main class="container">
 		<div class="row">
-			<div class="column">
+			<div class="column service">
 				<h2>
-					<a href="Service-Learning-Awards/index.php">
-						<?=$award1DropdownLabel?>
-					</a>
+					<?=$award1DropdownLabel?>
 				</h2>
-				<p>Engaging with society through community service.</p>
-				<?php
-				foreach($award1DropdownContents as $link) {
-					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a><br>";
-				}?>
+				<p>Engaging with society through community service.<br>
+					<a href="Service-Learning-Awards/index.php">Learn more</a>.
+				</p>
 			</div>
 
-			<div class="column">
+			<div class="column special">
 				<h2>
-					<a href="Special-Recognition-Awards/index.php">
-						<?=$award2DropdownLabel?>
-					</a>
+					<?=$award2DropdownLabel?>
 				</h2>
-				<p>Supporting and Promoting BPA.</p>
-
-				<?php
-				foreach($award2DropdownContents as $link) {
-					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a><br>";
-				}?>
+				<p>Supporting and Promoting BPA.<br>
+					<a href="Special-Recognition-Awards/index.php">Learn more</a>.
+				</p>
 			</div>
 
-			<div class="column">
+			<div class="column proff">
 				<h2>
-					<a href="Professional-Awards/index.php">
-						<?=$award3DropdownLabel?>
-					</a>
+					<?=$award3DropdownLabel?>
 				</h2>
-				<p>Recognizing BPA’s supporters.</p>
-
-				<?php
-				foreach($award3DropdownContents as $link) {
-					echo "<a href=\"" . $rel_url . $link[1] . "\">" . $link[0] . "</a><br>";
-				}?>
+				<p>Recognizing BPA’s supporters.<br>
+					<a href="Professional-Awards/index.php">Learn more</a>.
+				</p>
 			</div>
 		</div>
 		<br>

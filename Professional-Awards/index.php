@@ -7,13 +7,15 @@ $desc = "Page describing main topics of the Professional Awards";
 $heading = "Professional Awards";
 $sub_heading = "Supporting our supporters";
 $para = "BPA would not be where it is today without the support of amazing teachers, professionals, and, nonetheless, all our members. Because of that, BPA recognizes all the effort made for our organization through the Professional Awards.
+
 <b>Guidelines and Applications</b>
 Advisor of the Year Award
 Emerging Advisor of the Year Award
 Emerging Professional of the Year Award
 Hall of Fame Award
 Outstanding Service Award
-Student of the Year Award-NEW 
+Student of the Year Award-<i>NEW</i> 
+
 <b>Submission</b>
 Professional Award applications must be submitted using http://www.bpa.org/submit .
 

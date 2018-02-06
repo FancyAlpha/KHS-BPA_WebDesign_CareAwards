@@ -14,9 +14,7 @@ Professional Award applications must be submitted using http://www.bpa.org/submi
 
 Applications due March 1.
 
-
 <b>General Guidelines</b>
-
 NO E-MAIL OR MAIL APPLICATIONS WILL BE ACCEPTED.
 All materials submitted become the property of Business Professionals of America and may be used as the National Center deems appropriate.
 It is not necessary for a chapter to attend the National Leadership Conference to participate in the program and receive the award.

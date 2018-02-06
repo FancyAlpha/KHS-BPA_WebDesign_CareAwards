@@ -34,7 +34,11 @@ nav {
 				}
 
 				&:hover {
-					background-color: rgba(0, 0, 0, 0.1);
+					background-color: $primary-color;
+
+					.aBtn > a {
+						color: white;
+					}
 					.dropdown-content {
 						display: block;
 					}
@@ -51,7 +55,8 @@ nav {
 						display: block;
 						@extend .transition;
 						&:hover {
-							background-color: #ddd;
+							background-color: $primary-color;
+							color: white;
 						}
 					}
 				}

@@ -3,29 +3,32 @@ $theme-color: white;
 .home {
 	.bk {
 		width: 100%;
-		height: 70vh;
-		background: url('../../_assets/people-walking.jpeg') no-repeat center;
+		height: 50vh; //background: url('../../_assets/people-walking.jpeg') no-repeat center;
+		background: $primary-color;
 		background-size: cover;
 		position: absolute;
 		z-index: -1;
 	}
 
 	header {
-		margin: 10vh 0;
+		margin: 5vh 0;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 
 		.heading {
 			color: white;
-			padding: 15px;
-			background: rgba(0, 0, 0, 0.6);
+			padding: 15px; //background: rgba(0, 0, 0, 0.6);
+		}
+
+		@media (min-width: $breakpoint) {
+			margin: 10vh 0;
 		}
 	}
 
 	main {
 		.row {
-			color: white;
+			//color: white;
 			display: flex;
 			flex-wrap: wrap;
 
@@ -36,10 +39,31 @@ $theme-color: white;
 
 				a {
 					color: $light-color;
-					text-decoration: none;
-					padding: 0.5em 0;
+					text-decoration: none; //padding: 0.5em 0;
 					display: inline-block;
 					@extend .hover-effect;
+				}
+
+				p,
+				h2,
+				a {
+					color: white; //background: linear-gradient( rgba(255, 0, 0, 0.45),
+					//rgba(255, 0, 0, 0.45));
+				}
+
+				&.proff {
+					background: linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../../_assets/proffesional.jpeg");
+					background-size: cover;
+				}
+
+				&.service {
+					background: linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../../_assets/community.jpeg");
+					background-size: cover;
+				}
+
+				&.special {
+					background: linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../../_assets/special.jpeg");
+					background-size: cover;
 				}
 			}
 		}
