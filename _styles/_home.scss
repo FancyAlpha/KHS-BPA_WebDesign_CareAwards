@@ -42,6 +42,13 @@ $theme-color: white;
 				@extend .card;
 				flex: 1;
 				min-width: 250px;
+				@extend .transition;
+				@media(min-width: $breakpoint) {
+
+					&:hover {
+						box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+					}
+				}
 
 				a {
 					color: $light-color;
