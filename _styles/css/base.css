@@ -395,15 +395,18 @@ footer {
       margin-bottom: 0em; }
       footer h4.policy-header + p {
         margin-top: 0.5em; }
-  footer .container .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-    footer .container .row .footer-item {
-      margin: 1em; }
-      footer .container .row .footer-item a {
-        display: block;
-        font-size: 0.9em; }
+  footer .container {
+    max-width: 960px; }
+    footer .container .row {
+      display: flex;
+      flex-wrap: wrap; }
+      footer .container .row .footer-item {
+        margin: 1em; }
+        footer .container .row .footer-item a {
+          display: block;
+          font-size: 0.9em; }
+      footer .container .row.about {
+        justify-content: center; }
   footer .copyright {
     padding: 15px;
     background: #141414; }
@@ -411,7 +414,7 @@ footer {
 .bk {
   width: 100%;
   height: 90vh;
-  background: #0a143a;
+  background: radial-gradient(#0a143a, #040817);
   background-size: cover;
   position: absolute;
   z-index: -1; }
@@ -424,6 +427,8 @@ footer {
   display: flex;
   align-items: center; }
   .home header .heading {
+    text-align: center;
+    max-width: 960px;
     color: white;
     padding: 15px; }
   @media (min-width: 500px) {
@@ -447,13 +452,13 @@ footer {
     .home main .row .column a {
       color: white; }
     .home main .row .column.proff {
-      background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../../_assets/proffesional.jpeg");
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../_assets/proffesional.jpeg");
       background-size: cover; }
     .home main .row .column.service {
-      background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../../_assets/community.jpeg");
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../_assets/community.jpeg");
       background-size: cover; }
     .home main .row .column.special {
-      background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../../_assets/special.jpeg");
+      background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../../_assets/special.jpeg");
       background-size: cover; }
 
 .flex-container {

@@ -3,7 +3,7 @@ $theme-color: white;
 .bk {
 	width: 100%;
 	height: 90vh; //background: url('../../_assets/people-walking.jpeg') no-repeat center;
-	background: $primary-color;
+	background: radial-gradient($primary-color, darken($primary-color, 8%));
 	background-size: cover;
 	position: absolute;
 	z-index: -1;
@@ -22,6 +22,8 @@ $theme-color: white;
 		align-items: center;
 
 		.heading {
+			text-align: center;
+			max-width: 960px;
 			color: white;
 			padding: 15px; //background: rgba(0, 0, 0, 0.6);
 		}
@@ -32,6 +34,7 @@ $theme-color: white;
 	}
 
 	main {
+
 		.row {
 			//color: white;
 			display: flex;
@@ -62,18 +65,21 @@ $theme-color: white;
 					//rgba(255, 0, 0, 0.45));
 				}
 
+				$background-col: rgba(0, 0, 0, 0.45);
+				$background-grad: linear-gradient( $background-col, $background-col);
+
 				&.proff {
-					background: linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../../_assets/proffesional.jpeg");
+					background: $background-grad, url("../../_assets/proffesional.jpeg");
 					background-size: cover;
 				}
 
 				&.service {
-					background: linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../../_assets/community.jpeg");
+					background: $background-grad, url("../../_assets/community.jpeg");
 					background-size: cover;
 				}
 
 				&.special {
-					background: linear-gradient( rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url("../../_assets/special.jpeg");
+					background: $background-grad, url("../../_assets/special.jpeg");
 					background-size: cover;
 				}
 			}
