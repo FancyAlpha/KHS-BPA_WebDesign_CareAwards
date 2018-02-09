@@ -43,5 +43,5 @@ $arr = array("Advisor of the Year Award",
 "Student of the Year Award"
 );
 
-include('../_modules/sub-page.php');
+include('../_modules/Professional-Awards-sub-page.php');
 ?>

@@ -47,5 +47,5 @@ $arr = array("Community Service",
 "Special Olympics"
 );
 
-include('../_modules/sub-page.php');
+include('../_modules/Service-Learning-Awards-sub-page.php');
 ?>

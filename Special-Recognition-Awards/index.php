@@ -37,5 +37,5 @@ $arr = array("BPA Marketing and Public Relations",
 "The Professional Cup"
 );
 
-include('../_modules/sub-page.php');
+include('../_modules/Special-Recognition-Awards-sub-page.php');
 ?>

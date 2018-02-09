@@ -12,8 +12,33 @@
 	background: rgb(245, 245, 245);
 }
 
-.sub-body {
+.sub-body,
+.main-sub {
 	background: white;
 	padding: 5em 2em;
 	max-width: 960px;
+}
+
+
+@media (min-width: $breakpoint) {
+	.bk + .main-sub,
+	.sub-body {
+		margin-top: 10vh;
+		box-shadow: 0 0 $shadow-size rgba(0, 0, 0, $shadow-strength);
+	}
+
+	.professional-award {
+		background: url('../../_assets/proffesional.jpeg');
+		background-size: cover;
+	}
+
+	.service-learning {
+		background: url('../../_assets/community.jpeg');
+		background-size: cover;
+	}
+
+	.special-recognition {
+		background: url('../../_assets/special.jpeg');
+		background-size: cover;
+	}
 }

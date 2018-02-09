@@ -1,25 +1,24 @@
 $theme-color: white;
 
-.home {
+.bk {
+	width: 100%;
+	height: 90vh; //background: url('../../_assets/people-walking.jpeg') no-repeat center;
+	background: $primary-color;
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+}
+
+@media (min-width: 600px) {
 	.bk {
-		width: 100%;
-		height: 90vh; //background: url('../../_assets/people-walking.jpeg') no-repeat center;
-		background: $primary-color;
-		background-size: cover;
-		position: absolute;
-		z-index: -1;
+		height: 60vh;
 	}
+}
 
-	@media (min-width: 600px) {
-		.bk {
-			height: 50vh;
-		}
-	}
-
+.home {
 	header {
 		margin: 5vh 0;
 		display: flex;
-		justify-content: center;
 		align-items: center;
 
 		.heading {
@@ -44,7 +43,6 @@ $theme-color: white;
 				min-width: 250px;
 				@extend .transition;
 				@media(min-width: $breakpoint) {
-
 					&:hover {
 						box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
 					}

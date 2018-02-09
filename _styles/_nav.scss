@@ -40,6 +40,7 @@ nav {
 						color: white;
 					}
 					.dropdown-content {
+						@extend .shadow;
 						display: block;
 					}
 				}
